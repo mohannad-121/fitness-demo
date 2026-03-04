@@ -11,20 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-.env
-.history/
-tmp/
-
-# Python virtual environments and caches
-ai_backend/venv/
-venv/
-.venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-
-# Backend runtime logs
-ai_backend/ai_backend/logs/
 
 # Editor directories and files
 .vscode/*
@@ -36,5 +22,3 @@ ai_backend/ai_backend/logs/
 *.njsproj
 *.sln
 *.sw?
-
-extracted-workout-page.zip

@@ -1,6 +1,6 @@
 import { jsx, jsxs } from "react/jsx-runtime";
 import { Link, useLocation } from "react-router-dom";
-import { Home, Dumbbell, Globe, MessageCircle } from "lucide-react";
+import { Home, Dumbbell, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 function Navbar() {
@@ -8,8 +8,7 @@ function Navbar() {
   const location = useLocation();
   const navItems = [
     { path: "/", icon: Home, label: t("nav.home") },
-    { path: "/workouts", icon: Dumbbell, label: t("nav.workouts") },
-    { path: "/chatbot", icon: MessageCircle, label: t("nav.chatbot") }
+    { path: "/workouts", icon: Dumbbell, label: t("nav.workouts") }
   ];
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "ar" : "en");

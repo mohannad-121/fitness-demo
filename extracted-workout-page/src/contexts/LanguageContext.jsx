@@ -5,7 +5,6 @@ const translations = {
   en: {
     "nav.home": "Home",
     "nav.workouts": "Workouts",
-    "nav.chatbot": "Chatbot",
     "hero.title": "TRANSFORM YOUR BODY",
     "hero.subtitle": "Personalized workouts for your goals and fitness level.",
     "hero.cta": "Start Your Journey",
@@ -45,7 +44,6 @@ const translations = {
   ar: {
     "nav.home": "الرئيسية",
     "nav.workouts": "التمارين",
-    "nav.chatbot": "الشات بوت",
     "hero.title": "غيّر جسمك",
     "hero.subtitle": "تمارين مخصصة حسب هدفك ومستواك الرياضي.",
     "hero.cta": "ابدأ رحلتك",

@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import heroBg from "@/assets/hero-bg.jpg";
 const Index = () => {
   const { t } = useLanguage();
+
   const features = [
     {
       icon: Target,

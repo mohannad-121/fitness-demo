@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "owner": "Mahannad",
+    "week": 2,
+    "project": "Fitness AI Chatbot",
+    "version": "1.0.0"
+  },
+  "categories": {
+    "greetings": {
+      "en": [
+        "Hi! I am your fitness coach. How can I help you today?",
+        "Welcome back. Do you want workout guidance, nutrition, or progress analysis?",
+        "Great to see you. Tell me your goal and current stats to start."
+      ],
+      "ar": [
+        "أهلًا! أنا مدربك الرياضي، كيف بقدر أساعدك اليوم؟",
+        "أهلا فيك، بدك خطة تمرين ولا خطة تغذية ولا تحليل تقدمك؟",
+        "ممتاز رجعت، ابعتلي هدفك ووضعك الحالي ونبلّش."
+      ]
+    },
+    "progress_analysis": {
+      "templates": [
+        {
+          "id": "PA001",
+          "name": "weight_loss_on_track",
+          "response_en": "You are on track. Weekly loss is {weekly_change} kg, remaining {remaining_kg} kg, estimated {eta_weeks} weeks to target.",
+          "response_ar": "أنت ماشي ممتاز. نزولك الأسبوعي {weekly_change} كغ، باقي {remaining_kg} كغ، والمدة المتوقعة {eta_weeks} أسبوع."
+        },
+        {
+          "id": "PA002",
+          "name": "weight_loss_behind",
+          "response_en": "You are behind target. Current weekly loss {weekly_change} kg is slower than goal. Increase activity or reduce calories by {calorie_delta}.",
+          "response_ar": "أنت متأخر عن الهدف. نزولك الأسبوعي الحالي {weekly_change} كغ أبطأ من المطلوب. زوّد النشاط أو قلل السعرات بمقدار {calorie_delta}."
+        },
+        {
+          "id": "PA003",
+          "name": "muscle_gain_on_track",
+          "response_en": "Progress is good. Strength trend is rising and bodyweight is increasing at a controlled pace.",
+          "response_ar": "تقدمك جيد. القوة في ارتفاع ووزنك يزيد بمعدل مضبوط."
+        }
+      ]
+    },
+    "exercise_plans": {
+      "templates": [
+        {
+          "id": "EP001",
+          "goal": "build_muscle",
+          "level": "beginner",
+          "location": "home",
+          "response_en": "3 days/week full-body plan with progressive overload: push-ups, squats, rows, core work.",
+          "response_ar": "خطة 3 أيام أسبوعيًا للجسم كامل مع حمل تدريجي: ضغط، سكوات، سحب، وتمارين بطن."
+        },
+        {
+          "id": "EP002",
+          "goal": "lose_weight",
+          "level": "intermediate",
+          "location": "gym",
+          "response_en": "4-day split with cardio finisher and step target to increase weekly deficit safely.",
+          "response_ar": "تقسيمة 4 أيام مع كارديو في النهاية وهدف خطوات لزيادة العجز الأسبوعي بشكل آمن."
+        }
+      ]
+    },
+    "nutrition_plans": {
+      "templates": [
+        {
+          "id": "NP001",
+          "goal": "lose_weight",
+          "response_en": "High-protein calorie deficit plan: 3 meals + 1 snack, protein 1.8-2.2 g/kg bodyweight.",
+          "response_ar": "خطة عجز سعرات عالية البروتين: 3 وجبات + سناك، بروتين بين 1.8 إلى 2.2 غ لكل كغ وزن."
+        },
+        {
+          "id": "NP002",
+          "goal": "build_muscle",
+          "response_en": "Lean-bulk plan: +200 to +300 kcal daily, consistent protein and carb timing around training.",
+          "response_ar": "خطة تضخيم نظيف: زيادة 200-300 سعرة يوميًا مع ثبات البروتين وتوزيع الكربوهيدرات حول التمرين."
+        }
+      ]
+    },
+    "out_of_scope_responses": {
+      "en": [
+        "I am specialized in fitness and nutrition only. Ask me about training, food, recovery, or progress.",
+        "That topic is outside my scope. I can help you with workouts, body composition, and performance."
+      ],
+      "ar": [
+        "أنا مختص فقط باللياقة والتغذية. اسألني عن التمرين، الأكل، الاستشفاء، أو تحليل التقدم.",
+        "هذا الموضوع خارج تخصصي. بقدر أساعدك في الرياضة، تكوين الجسم، والأداء."
+      ]
+    }
+  }
+}

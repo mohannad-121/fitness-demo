@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>FitCoach - AI Fitness Platform</title>
+    <meta name="description" content="AI-guided fitness coaching with smart exercise filtering and a lightweight training planner." />
+    <meta name="author" content="FitCoach" />
+    <meta property="og:title" content="FitCoach - AI Fitness Platform" />
+    <meta property="og:description" content="AI-guided fitness coaching with smart filters and weekly plans." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/fc-logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@FitCoach" />
+    <meta name="twitter:image" content="/fc-logo.svg" />
+  </head>
+  <body class="bg-background text-foreground">
+    <header class="fixed top-0 inset-x-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-primary shadow-glow flex items-center justify-center">
+            <span class="font-display text-lg text-primary-foreground">FC</span>
+          </div>
+          <div>
+            <div class="font-display text-xl">FITCOACH</div>
+            <div class="text-xs text-muted-foreground">AI Fitness Platform</div>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/" data-i18n="nav.home" class="hover:text-primary transition">Home</a>
+          <a href="/workouts.html" data-i18n="nav.workouts" class="hover:text-primary transition">Workouts</a>
+          <a href="/schedule.html" data-i18n="nav.schedule" class="hover:text-primary transition">Schedule</a>
+          <a href="/profile.html" data-i18n="nav.profile" class="hover:text-primary transition">Profile</a>
+          <a href="/auth.html" data-i18n="nav.auth" class="hover:text-primary transition">Sign In</a>
+          <a href="/muscles.html" data-i18n="muscles.title" class="hover:text-primary transition">Muscles</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button data-lang-toggle class="px-3 py-1.5 rounded-full border border-border/50 text-xs tracking-wide">AR</button>
+          <button data-menu-toggle class="md:hidden px-3 py-1.5 rounded-full border border-border/50">Menu</button>
+        </div>
+      </div>
+
+      <div data-menu class="md:hidden hidden border-t border-border/40 bg-background/95">
+        <div class="px-4 py-4 flex flex-col gap-3 text-sm">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="/workouts.html" data-i18n="nav.workouts">Workouts</a>
+          <a href="/schedule.html" data-i18n="nav.schedule">Schedule</a>
+          <a href="/profile.html" data-i18n="nav.profile">Profile</a>
+          <a href="/auth.html" data-i18n="nav.auth">Sign In</a>
+          <a href="/muscles.html" data-i18n="muscles.title">Muscles</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <section id="home" class="relative min-h-screen flex items-center">
+        <div class="absolute inset-0">
+          <img src="/src/assets/hero-bg.jpg" alt="Fitness hero" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background"></div>
+        </div>
+
+        <div class="relative container mx-auto px-4 py-20 text-center">
+          <div class="max-w-4xl mx-auto">
+            <h1 class="font-display text-6xl md:text-8xl text-foreground mb-6" data-i18n="hero.title">TRANSFORM YOUR BODY</h1>
+            <p class="text-lg md:text-xl text-muted-foreground mb-10" data-i18n="hero.subtitle">
+              AI-guided training plans, smart exercise filters, and a lightweight coach demo built in plain JavaScript.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/workouts.html" class="px-8 py-4 rounded-full bg-primary text-primary-foreground shadow-button text-sm uppercase tracking-widest" data-i18n="hero.cta">Start Training</a>
+              <a href="/schedule.html" class="px-8 py-4 rounded-full border border-border/60 text-sm uppercase tracking-widest" data-i18n="hero.secondary">Explore Workouts</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-5xl mb-4" data-i18n="features.title">EVERYTHING YOU NEED</h2>
+            <p class="text-muted-foreground max-w-2xl mx-auto" data-i18n="features.subtitle">
+              A focused fitness hub with clean UI, fast filters, and no heavy frameworks.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-card rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2" data-i18n="features.one.title">Smart Filters</h3>
+              <p class="text-sm text-muted-foreground" data-i18n="features.one.desc">Find exercises by muscle, goal, location, and gender in seconds.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2" data-i18n="features.two.title">Guided Plans</h3>
+              <p class="text-sm text-muted-foreground" data-i18n="features.two.desc">Follow weekly training templates tailored for consistency.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2" data-i18n="features.three.title">Coach Demo</h3>
+              <p class="text-sm text-muted-foreground" data-i18n="features.three.desc">Ask quick fitness questions and get instant replies.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2" data-i18n="features.four.title">Progress Cards</h3>
+              <p class="text-sm text-muted-foreground" data-i18n="features.four.desc">Track weekly focus and stay on target.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="border-t border-border/40 py-8">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
+            <span class="text-primary-foreground font-display">FC</span>
+          </div>
+          <span class="font-display text-lg">FITCOACH</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

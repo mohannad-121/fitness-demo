@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>FitCoach - Sign In</title>
+    <meta name="description" content="Sign in to FitCoach (demo form)." />
+  </head>
+  <body class="bg-background text-foreground">
+    <header class="fixed top-0 inset-x-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-primary shadow-glow flex items-center justify-center">
+            <span class="font-display text-lg text-primary-foreground">FC</span>
+          </div>
+          <div>
+            <div class="font-display text-xl">FITCOACH</div>
+            <div class="text-xs text-muted-foreground">AI Fitness Platform</div>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/" data-i18n="nav.home" class="hover:text-primary transition">Home</a>
+          <a href="/workouts.html" data-i18n="nav.workouts" class="hover:text-primary transition">Workouts</a>
+          <a href="/schedule.html" data-i18n="nav.schedule" class="hover:text-primary transition">Schedule</a>
+          <a href="/profile.html" data-i18n="nav.profile" class="hover:text-primary transition">Profile</a>
+          <a href="/auth.html" data-i18n="nav.auth" class="hover:text-primary transition">Sign In</a>
+          <a href="/muscles.html" data-i18n="muscles.title" class="hover:text-primary transition">Muscles</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button data-lang-toggle class="px-3 py-1.5 rounded-full border border-border/50 text-xs tracking-wide">AR</button>
+          <button data-menu-toggle class="md:hidden px-3 py-1.5 rounded-full border border-border/50">Menu</button>
+        </div>
+      </div>
+
+      <div data-menu class="md:hidden hidden border-t border-border/40 bg-background/95">
+        <div class="px-4 py-4 flex flex-col gap-3 text-sm">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="/workouts.html" data-i18n="nav.workouts">Workouts</a>
+          <a href="/schedule.html" data-i18n="nav.schedule">Schedule</a>
+          <a href="/profile.html" data-i18n="nav.profile">Profile</a>
+          <a href="/auth.html" data-i18n="nav.auth">Sign In</a>
+          <a href="/muscles.html" data-i18n="muscles.title">Muscles</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <section class="py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div>
+            <h1 class="font-display text-4xl md:text-5xl mb-4" data-i18n="auth.title">SIGN IN</h1>
+          </div>
+          <div class="glass-card rounded-2xl p-8">
+            <form class="space-y-4" data-auth-form>
+              <input type="email" placeholder="Email" class="w-full rounded-full bg-secondary/50 border border-border px-4 py-2 text-sm" required />
+              <input type="password" placeholder="Password" class="w-full rounded-full bg-secondary/50 border border-border px-4 py-2 text-sm" required />
+              <button class="px-6 py-2 rounded-full bg-primary text-primary-foreground text-sm" data-i18n="auth.button">Continue</button>
+              <div class="text-sm text-primary" data-auth-notice></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-border/40 py-8">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
+            <span class="text-primary-foreground font-display">FC</span>
+          </div>
+          <span class="font-display text-lg">FITCOACH</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
